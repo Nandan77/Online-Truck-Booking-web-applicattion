@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Airprice Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://lh3.googleusercontent.com/-HtZivmahJYI/VUZKoVuFx3I/AAAAAAAAAcM/thmMtUUPjbA/Blue_square_A-3.PNG" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="forcompany.css">
+	<link rel="stylesheet" href="AdminSignin.css">
+	<script  src="jquery-1.9.1.min.js"></script>
+	<script src="Admin.js"></script>
+	
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="homepage.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="homepage.html"><span class="glyphicon glyphicon-user"> Sign out&nbsp;</span>						</a>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron text-center">
+		<h1>Airprice.com</h1> 
+		<p>We specialize in your air plan!</p> 
+	</div>
+
+	<div class="container">
+		
+		<div class="btn-group btn-group-justified">
+			<div class="btn btn-primary" id="a">Add</div>
+			<div class="btn btn-primary" id="u">Update</div>
+			<div class="btn btn-primary" id="d">Delete</div>
+		</div>
+		<hr />
+		<div id = "add">
+		<form class="form-horizontal" role="form" id="addf">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="truck_id">Truck_id</label>
+						<div class="col-sm-6">
+							<input type="truck_id" class="form-control" id="truck_id" placeholder="" name="truck_id">
+							
+						</div>
+						
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="type">Type</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="type" placeholder="" name="type">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="name">Name</label>
+						<div class="col-sm-6">
+							<input type="name" class="form-control" id="name" placeholder="" name="name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="capacity">Capacity</label>
+						<div class="col-sm-6">
+							<input type="capacity" class="form-control" id="capacity" placeholder="" name="capacity">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="price">Price</label>
+						<div class="col-sm-6">
+							<input type="price" class="form-control" id="price" placeholder="" name="price">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="image">Image</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="image" placeholder="" name="image">
+						</div>
+					</div>
+			
+			<br />
+			<div class="form-group">        
+				<div class="col-sm-offset-2 col-sm-6">
+					<input type = "button" class="btn btn-primary btn-block" name="btn-submit" id="ad" value = "submit" />
+				</div>
+			</div>
+		</form>
+		</div>
+
+
+		<div id = "update">
+				<form class="form-horizontal" action="Adminadd.php" role="form" id="ud1">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="truck_id">Truck_id</label>
+						<div class="col-sm-6">
+							<input type="truck_id" class="form-control" id="truck_id" placeholder="" name="truck_id">
+							
+						</div>
+						
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="type">Type</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="type" placeholder="" name="type">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="name">Name</label>
+						<div class="col-sm-6">
+							<input type="name" class="form-control" id="name" placeholder="" name="name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="capacity">Capacity</label>
+						<div class="col-sm-6">
+							<input type="capacity" class="form-control" id="capacity" placeholder="" name="capacity">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="price">Price</label>
+						<div class="col-sm-6">
+							<input type="price" class="form-control" id="price" placeholder="" name="price">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="image">Image</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="image" placeholder="" name="image">
+						</div>
+					</div>
+			
+			<br />
+			<div class="form-group">        
+				<div class="col-sm-offset-2 col-sm-6">
+					<input type = "button" class="btn btn-primary btn-block" value="Update" id="up" />
+					<input type = "button" class="btn btn-primary btn-block" value="Delete" id="de" />
+				</div>
+			</div>
+		</form>
+		</div>
+		<div id = "delete">
+	
+	    </div>
+		<br /><br /><br />
+	</div>	
+	
+	<footer class="container-fluid text-center">
+		<a href="#signUpPage" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Airprice.com</p>		
+	</footer>
+</body>
+</html>
